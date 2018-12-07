@@ -1,5 +1,14 @@
 package com.moodify.moodifyandroid;
 
+/*
+*  TITLE: SpotifyLoginActivity.java
+*  Authors: Miguel Gotao and Scott Weller
+*
+*   Helper class used by Spotify Android SDK to authenticate
+*   device
+*
+ */
+
 import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
@@ -27,17 +36,14 @@ public class SpotifyLoginActivity extends AppCompatActivity {
             switch (response.getType()) {
                 // Response was successful and contains auth token
                 case TOKEN:
-                    // Handle successful response
                     break;
 
                 // Auth flow returned an error
                 case ERROR:
-                    // Handle error response
                     break;
-
                 // Most likely auth flow was cancelled
                 default:
-                    // Handle other cases
+
             }
     }
 }}

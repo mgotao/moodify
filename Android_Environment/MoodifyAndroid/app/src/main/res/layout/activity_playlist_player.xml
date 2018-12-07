@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:weightSum="2"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:weightSum="1"
+        android:background="@drawable/tvbackground"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:id="@+id/songIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/layoutbackground"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:background="@drawable/song_status_background"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="10dp"
+            android:id="@+id/statusWindow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="30dp"/>
+
+        <LinearLayout
+            android:weightSum="6"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/buttonSkipPrevious"
+                android:text="Previous Song"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onSkipPrevious"/>
+            <Button
+                android:layout_weight="4"
+                android:id="@+id/playButton"
+                android:text="Play song"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onPlaySongPressed"/>
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/buttonSkipNext"
+                android:text="Next Song"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onSkipNext"/>
+
+        </LinearLayout>
+        <Button
+            android:text="Pause song"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onPauseSongPressed"/>
+        <Button
+            android:text="Stop song"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onStopSongPressed"/>
+    </LinearLayout>
+</LinearLayout>
