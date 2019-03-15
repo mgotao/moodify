@@ -1,8 +1,0 @@
-# Sprint #1 - 11/13/2018
-
-+ Connect to Spotify API
-
-
-For this I wanted to get the app running and connected to Spotify, but I'm currently having trouble with API authorization. 
-I'm relatively sure all I have to do is figure out how to get my app's SHA1 key, but there were also some issues with the redirect uri.
-In the next day or so I want to get the app fully connected and get the media player up and running

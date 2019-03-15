@@ -1,6 +1,6 @@
 package com.moodify.moodifyandroid;
 
-// Class that exists for no other reason than to show of the App logo for a few seconds on startup
+// Class that exists for no other reason than to show off the App logo for a few seconds on startup
 
 import android.content.Intent;
 import android.os.CountDownTimer;
